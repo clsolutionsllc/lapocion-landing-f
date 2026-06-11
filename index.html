@@ -121,10 +121,6 @@ footer .logo img{height:28px;filter:brightness(0) invert(1)}
 .hero-rate small{display:block;font-weight:400;font-size:.76rem;color:var(--muted)}
 .hero-banner{display:none}
 .hero-banner img{display:block;width:100%;height:auto}
-/* floating parallax stars */
-.par{position:absolute;z-index:1;font-size:1.5rem;opacity:.85;pointer-events:none;animation:float 7s ease-in-out infinite;will-change:transform;filter:drop-shadow(0 6px 14px rgba(10,49,97,.18))}
-.par.s2{animation-delay:1.6s}.par.s3{animation-delay:3.1s}.par.s4{animation-delay:4.5s}
-@keyframes float{0%,100%{margin-top:0}50%{margin-top:-16px}}
 @media(max-width:860px){
   .hero{background:
     radial-gradient(120% 90% at 50% -10%,rgba(30,94,255,.14),transparent 55%),
@@ -136,7 +132,6 @@ footer .logo img{height:28px;filter:brightness(0) invert(1)}
   .hero .sub{margin-inline:auto}
   .hero-banner{display:block;max-width:560px;margin:18px auto 0;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
   .hero-banner img{width:100%;aspect-ratio:1.25;object-fit:cover;object-position:72% center}
-  .par{display:none}
 }
 
 /* ---------- TRUST BAR ---------- */
@@ -515,7 +510,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
 }
 @media(prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
-  .par,.hero h1 em{animation:none}
+  .hero h1 em{animation:none}
   #fx,#spot{display:none}
 }
 </style>
@@ -528,7 +523,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
 
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
-  <span><span class="mq-star">🎆</span> 4TH OF JULY HAIR EVENT &nbsp;·&nbsp; <b>EXTRA 10% OFF EVERY KIT</b> &nbsp;·&nbsp; JULY 2–5 ONLY &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp; 🇺🇸 &nbsp;·&nbsp; <span class="mq-star">🎆</span> 4TH OF JULY HAIR EVENT &nbsp;·&nbsp; <b>EXTRA 10% OFF EVERY KIT</b> &nbsp;·&nbsp; JULY 2–5 ONLY &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp; 🇺🇸 &nbsp;·&nbsp;</span>
+  <span><span class="mq-star">★</span> 4TH OF JULY HAIR EVENT &nbsp;·&nbsp; <b>EXTRA 10% OFF EVERY KIT</b> &nbsp;·&nbsp; JULY 2–5 ONLY &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp; <span class="mq-star">★</span> 4TH OF JULY HAIR EVENT &nbsp;·&nbsp; <b>EXTRA 10% OFF EVERY KIT</b> &nbsp;·&nbsp; JULY 2–5 ONLY &nbsp;·&nbsp; FREE SHIPPING OVER $50 &nbsp;·&nbsp;</span>
 </div>
 
 <!-- HEADER -->
@@ -548,10 +543,6 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
 
 <!-- HERO -->
 <section class="hero">
-  <span class="par" style="top:10%;left:4%" data-depth="30">🎆</span>
-  <span class="par s2" style="top:58%;left:3%" data-depth="18">⭐</span>
-  <span class="par s3" style="top:12%;left:58%" data-depth="26">🎇</span>
-  <span class="par s4" style="top:7%;right:6%" data-depth="14">⭐</span>
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow">★ The Star-Spangled Hair Event · July 2–5 ★</span>
@@ -987,13 +978,13 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
 <section class="capture" id="capture">
   <div class="wrap">
     <p class="kicker">Before you go</p>
-    <h2>Unlock an extra <em>10% off</em> your first ritual</h2>
-    <p>Join the list for your code, hair tips, and first dibs on new drops. No spam, just good hair.</p>
+    <h2>Get <em>10% off</em> your next order</h2>
+    <p>Today's July 4th price is already applied automatically — no code needed. Join the list and we'll send you a 10% code for your <b>next order</b>, valid after the sale ends. Plus hair tips and first dibs on new drops.</p>
     <form class="capform" id="capform" novalidate>
       <input type="email" id="capemail" placeholder="you@email.com" autocomplete="email" required>
       <button type="submit" class="btn aqua">Send my 10% code</button>
     </form>
-    <div class="cap-done" id="capdone">🎉 You're in! Check your inbox for your 10% code.</div>
+    <div class="cap-done" id="capdone">🎉 You're in! Your 10% next-order code is on its way — valid after the July 4th sale.</div>
     <p class="cap-note">By signing up you agree to receive marketing emails. Unsubscribe anytime.</p>
   </div>
 </section>
@@ -1044,7 +1035,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
     <div class="mp">$99.99<small>5-Piece Deep Repair</small></div>
   </div>
   <div class="mbar-parts" aria-label="What's in the kit">
-    <div class="mbar-tag">🎆 4th of July Sale · Extra 10% off every kit · July 2–5</div>
+    <div class="mbar-tag">★ 4th of July Sale · Extra 10% off every kit · July 2–5 ★</div>
     <div class="mbar-thumbs">
       <span class="mbp"><img src="images/parts/shampoo.png" alt="">Shampoo</span>
       <span class="mbp"><img src="images/parts/treatment.png" alt="">Treatment</span>
@@ -1061,13 +1052,13 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
   <div class="popup">
     <button class="px" id="popx" aria-label="Close">×</button>
     <div class="pk">★ psst... ★</div>
-    <h3>Take <em>10% off</em> your first ritual</h3>
-    <p>Enter your email and we'll send your code right now — just in time for the 4th.</p>
+    <h3>Take <em>10% off</em> your next order</h3>
+    <p>Today's sale price is already applied automatically. Enter your email and we'll send a 10% code for your <b>next order</b> — valid after the July 4th sale ends.</p>
     <form class="capform" id="popform" novalidate>
       <input type="email" id="popemail" placeholder="you@email.com" autocomplete="email" required>
       <button type="submit" class="btn aqua">Get my 10% code</button>
     </form>
-    <div class="cap-done" id="popdone">🎉 You're in! Check your inbox for your code.</div>
+    <div class="cap-done" id="popdone">🎉 You're in! Your 10% next-order code is on its way.</div>
     <p class="cap-note">No spam. Unsubscribe anytime.</p>
   </div>
 </div>
@@ -1420,23 +1411,6 @@ if(FINE&&!REDUCED)document.querySelectorAll('.magnet').forEach(function(b){
   b.addEventListener('mouseleave',function(){b.style.transform='';});
 });
 
-/* ----- hero parallax stars ----- */
-if(FINE&&!REDUCED)(function(){
-  var hero=document.querySelector('.hero'),els=hero.querySelectorAll('.par');
-  if(!els.length)return;
-  var raf=null,mx=0,my=0;
-  hero.addEventListener('mousemove',function(e){
-    var r=hero.getBoundingClientRect();
-    mx=(e.clientX-r.left)/r.width-.5; my=(e.clientY-r.top)/r.height-.5;
-    if(!raf){raf=requestAnimationFrame(function(){
-      els.forEach(function(el){
-        var d=parseFloat(el.dataset.depth)||15;
-        el.style.transform='translate('+(-mx*d)+'px,'+(-my*d)+'px)';
-      });
-      raf=null;
-    });}
-  },{passive:true});
-})();
 </script>
 </body>
 </html>
