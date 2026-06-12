@@ -102,7 +102,7 @@ footer .logo img{height:28px;filter:brightness(0) invert(1)}
 .hero{position:relative;overflow:hidden;isolation:isolate;
   background:
     linear-gradient(95deg, rgba(247,250,255,.97) 0%, rgba(247,250,255,.9) 30%, rgba(247,250,255,.5) 48%, rgba(247,250,255,0) 64%),
-    url('images/lux/hero-full.png?v=f2') center right / cover no-repeat, var(--ice)}
+    url('images/lux/hero-full.webp?v=f2') center right / cover no-repeat, var(--ice)}
 .hero-grid{position:relative;z-index:2;display:flex;align-items:center;min-height:min(82vh,760px);padding:50px 0}
 .hero-copy{position:relative;width:56%;max-width:620px;text-align:left}
 .eyebrow{display:inline-flex;align-items:center;gap:.55rem;background:#fff;border:1.5px solid var(--blue);color:var(--blue);padding:9px 20px;border-radius:99px;font-weight:700;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;box-shadow:0 8px 22px rgba(30,94,255,.15)}
@@ -320,7 +320,7 @@ footer .logo img{height:28px;filter:brightness(0) invert(1)}
 /* ---------- RESULTS ---------- */
 .results{background:var(--ice);overflow:hidden}
 .results-grid{width:min(1180px,92vw);margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;padding:78px 0}
-.results-photo{position:relative;min-height:460px;border-radius:var(--r);background:url('images/lux/results.png?v=f1') center 30%/cover no-repeat;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.results-photo{position:relative;min-height:460px;border-radius:var(--r);background:url('images/lux/results.webp?v=f1') center 30%/cover no-repeat;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
 .results-photo .float{position:absolute;left:24px;bottom:24px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:18px;padding:16px 20px;box-shadow:var(--shadow-sm)}
 .results-photo .float .n{font-family:'Unbounded';font-weight:900;font-size:1.5rem;background:var(--grad-usa);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
 .results-photo .float div:last-child{font-weight:700;color:var(--navy);font-size:.85rem;margin-top:2px}
@@ -522,6 +522,13 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
   .compare thead th{font-size:.62rem;letter-spacing:.01em}
   .compare td:first-child{font-size:.7rem}
 }
+
+/* ===== Mobile: shorter kit image (match Page A) ===== */
+@media(max-width:780px){
+  .kit-media{position:relative;overflow:hidden;aspect-ratio:3/4}
+  .kit-media>.tilt{position:absolute;inset:0}
+  .kit-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+}
 </style>
 </head>
 <body>
@@ -568,7 +575,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       </div>
     </div>
     <div class="hero-banner">
-      <img src="images/lux/hero-full.png?v=f2" alt="The full La Poción collection under 4th of July fireworks">
+      <img src="images/lux/hero-full.webp?v=f2" alt="The full La Poción collection under 4th of July fireworks">
     </div>
   </div>
 </section>
@@ -681,7 +688,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       <!-- KIT 1 -->
       <article class="kit reveal" id="kit-5">
         <div class="kit-media"><div class="kit-badge">★ Best-Seller</div><div class="kit-num">01</div>
-          <div class="tilt"><img src="images/lux/kit-5piece.png?v=f2" alt="5-Piece Deep Repair Ritual"><div class="glare"></div></div></div>
+          <div class="tilt"><img src="images/lux/kit-5piece.webp?v=f2" loading="lazy" alt="5-Piece Deep Repair Ritual"><div class="glare"></div></div></div>
         <div class="kit-body">
           <span class="kit-tagline">The Headliner</span>
           <h3>5-Piece Deep Repair</h3>
@@ -712,7 +719,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       <!-- KIT 2 -->
       <article class="kit reveal" id="kit-4">
         <div class="kit-media"><div class="kit-badge">Strength &amp; Growth</div><div class="kit-num">02</div>
-          <div class="tilt"><img src="images/lux/kit-4piece.png?v=f6" alt="4-Piece Strength & Growth Ritual"><div class="glare"></div></div></div>
+          <div class="tilt"><img src="images/lux/kit-4piece.webp?v=f6" loading="lazy" alt="4-Piece Strength & Growth Ritual"><div class="glare"></div></div></div>
         <div class="kit-body">
           <span class="kit-tagline">The Daily Anthem</span>
           <h3>4-Piece Strength &amp; Growth</h3>
@@ -743,7 +750,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       <!-- KIT 3 -->
       <article class="kit reveal" id="kit-t">
         <div class="kit-media"><div class="kit-badge">Curls' Best Friend</div><div class="kit-num">03</div>
-          <div class="tilt"><img src="images/lux/kit-tongole.png?v=f2" alt="Tongolé Curl Reconstruction Ritual"><div class="glare"></div></div></div>
+          <div class="tilt"><img src="images/lux/kit-tongole.webp?v=f2" loading="lazy" alt="Tongolé Curl Reconstruction Ritual"><div class="glare"></div></div></div>
         <div class="kit-body">
           <span class="kit-tagline">Let Freedom Spring</span>
           <h3>Tongolé Curl Ritual</h3>
@@ -774,7 +781,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       <!-- KIT 4 -->
       <article class="kit reveal" id="kit-b8">
         <div class="kit-media"><div class="kit-badge">Glass-Hair Glow</div><div class="kit-num">04</div>
-          <div class="tilt"><img src="images/lux/kit-b8.png?v=f1" alt="B8 Infinite Shine Ritual"><div class="glare"></div></div></div>
+          <div class="tilt"><img src="images/lux/kit-b8.webp?v=f1" loading="lazy" alt="B8 Infinite Shine Ritual"><div class="glare"></div></div></div>
         <div class="kit-body">
           <span class="kit-tagline">The Sparkler</span>
           <h3>B8 Infinite Shine</h3>
@@ -805,7 +812,7 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
       <!-- KIT 5 -->
       <article class="kit reveal" id="kit-k">
         <div class="kit-media"><div class="kit-badge">Tear-Free</div><div class="kit-num">05</div>
-          <div class="tilt"><img src="images/lux/kit-kids.png?v=f2" alt="Kids Tangle-Free Ritual"><div class="glare"></div></div></div>
+          <div class="tilt"><img src="images/lux/kit-kids.webp?v=f2" loading="lazy" alt="Kids Tangle-Free Ritual"><div class="glare"></div></div></div>
         <div class="kit-body">
           <span class="kit-tagline">The Family Picnic</span>
           <h3>Kids Tangle-Free</h3>
@@ -1017,11 +1024,11 @@ footer .pay{background:transparent;border-color:rgba(255,255,255,.2);color:#9AA9
         <p style="margin-top:8px;max-width:34ch">Colombia's #1 hair ritual, now shipping across the USA. Made with love. 🇨🇴</p>
       </div>
       <div class="foot-col"><h5>Shop</h5>
-        <a href="#kit-5" class="foot-shop"><img src="images/lux/kit-5piece.png?v=f2" alt="">Deep Repair</a>
-        <a href="#kit-4" class="foot-shop"><img src="images/lux/kit-4piece.png?v=f6" alt="">Strength &amp; Growth</a>
-        <a href="#kit-t" class="foot-shop"><img src="images/lux/kit-tongole.png?v=f2" alt="">Tongolé Curls</a>
-        <a href="#kit-b8" class="foot-shop"><img src="images/lux/kit-b8.png?v=f1" alt="">B8 Infinite Shine</a>
-        <a href="#kit-k" class="foot-shop"><img src="images/lux/kit-kids.png?v=f2" alt="">Kids Tangle-Free</a>
+        <a href="#kit-5" class="foot-shop"><img src="images/lux/kit-5piece.webp?v=f2" loading="lazy" alt="">Deep Repair</a>
+        <a href="#kit-4" class="foot-shop"><img src="images/lux/kit-4piece.webp?v=f6" loading="lazy" alt="">Strength &amp; Growth</a>
+        <a href="#kit-t" class="foot-shop"><img src="images/lux/kit-tongole.webp?v=f2" loading="lazy" alt="">Tongolé Curls</a>
+        <a href="#kit-b8" class="foot-shop"><img src="images/lux/kit-b8.webp?v=f1" loading="lazy" alt="">B8 Infinite Shine</a>
+        <a href="#kit-k" class="foot-shop"><img src="images/lux/kit-kids.webp?v=f2" loading="lazy" alt="">Kids Tangle-Free</a>
       </div>
       <div class="foot-col"><h5>Help</h5><a href="#faq">FAQ</a><a href="#">Shipping &amp; Returns</a><a href="#">Track My Order</a><a href="#">Contact Us</a></div>
       <div class="foot-col"><h5>Brand</h5><a href="#science">Ingredients</a><a href="#results">Results</a><a href="#story">Our Story</a><a href="#quiz">Find Your Ritual</a></div>
@@ -1099,7 +1106,7 @@ function track(ev,data){ if(window.fbq){ fbq('track',ev,data); } console.log('[t
 /* ===================== CART + UPSELLS ===================== */
 var SHIP_FREE=50;
 var IMG={
-  'B0DSGYPPD7':'images/lux/kit-5piece.png?v=f2','B0DCYQV7XJ':'images/lux/kit-4piece.png?v=f6','B0DCZ1SLJK':'images/lux/kit-tongole.png?v=f2','B0DCZ64HBD':'images/lux/kit-b8.png?v=f1','B0FV7VB3TW':'images/lux/kit-kids.png?v=f2',
+  'B0DSGYPPD7':'images/lux/kit-5piece.webp?v=f2','B0DCYQV7XJ':'images/lux/kit-4piece.webp?v=f6','B0DCZ1SLJK':'images/lux/kit-tongole.webp?v=f2','B0DCZ64HBD':'images/lux/kit-b8.webp?v=f1','B0FV7VB3TW':'images/lux/kit-kids.webp?v=f2',
   'ADDON-BOOSTER':'images/upsell/booster.webp','ADDON-TERMO':'images/upsell/termoprotector.webp','ADDON-OIL':'images/upsell/b8oil.png','ADDON-R3START':'images/upsell/r3start.png'
 };
 var ADDONS=[
@@ -1121,7 +1128,7 @@ function closeCart(){cartEl.classList.remove('show');cartOv.classList.remove('sh
 function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('show');},2200);}
 function addToCart(id,name,price,sub){
   var ex=cart.find(function(i){return i.id===id;});
-  if(ex){ex.qty++;} else {cart.push({id:id,name:name,sub:sub||'',price:price,qty:1,img:IMG[id]||'images/lux/kit-5piece.png?v=f2'});}
+  if(ex){ex.qty++;} else {cart.push({id:id,name:name,sub:sub||'',price:price,qty:1,img:IMG[id]||'images/lux/kit-5piece.webp?v=f2'});}
   track('AddToCart',{content_name:name,content_ids:[id],value:price,currency:'USD',content_type:'product'});
   renderCart();
 }
